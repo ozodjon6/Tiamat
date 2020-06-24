@@ -24,11 +24,14 @@
                                 для автомобилей, строек и промышленности
                             </div>
                             <div class="d-sm-none">
-                                <div class="col-right">
-                                    <a href="#" class="col-right__user">
+                                <div class="col-right d-flex align-items-center">
+                                    <!-- <a href="#" class="col-right__user">
                                         <img src="./assets/icon/user.png" alt="">
-                                    </a>
-                                    <a href="#" class="col-right__basket">
+                                    </a> -->
+                                    <div class="nav-button">
+                                        <div class="nav-button__hamb"></div>
+                                    </div>
+                                    <a href="#" class="col-right__basket ml-3 ml-sm-0">
                                         <img src="./assets/icon/shopping-cart.png" alt="">
                                         <div class="col-right__quote">3</div>
                                     </a>
@@ -38,7 +41,7 @@
                         <div
                             class="col-lg-6 col-sm-12 d-flex align-items-center justify-content-center justify-content-md-between">
                             <div class="header__search col">
-                                <form action="search">
+                                <form action="#">
                                     <input class="search__input" type="search" placeholder="Поиск по товарам"
                                         aria-label="Search">
                                     <input class="search__submit" type="submit">
@@ -53,7 +56,6 @@
                                     </div>
                                 </a>
                             </div>
-
                         </div>
                     </div>
             </header>
@@ -61,7 +63,7 @@
                 <main>
                     <nav class="nav">
                         <div class="container">
-                            <div class="row  align-items-center justify-content-between">
+                            <div class="row d-flex  align-items-center justify-content-between">
                                 <div class="col-12 col-sm-5 col-md-4 col-lg-3">
                                     <div class="nav__cat">
                                         <a href="#" class="cat-menu">
@@ -71,7 +73,7 @@
                                                 <span></span>
                                             </div>
                                             <div class="cat-menu__title">Каталог товаров</div>
-                                            <svg class="cat-menu__arrow" width="16" height="16">
+                                            <svg class="cat-menu__arrow" width="14" height="14">
                                                 <use xlink:href="./assets/icon/sprite.svg#next-down">
                                                     <!-- <use xlink:href="./assets/icon/sprite.svg#next-up"></use> -->
                                                 </use>
@@ -102,6 +104,53 @@
                                             </li>
                                             <li class="main-nav__item">
                                                 <a href="#" class="main-nav__link">Контакты</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="nav-button col-1 d-none d-sm-block" id="button">
+                                    <div class="nav-button__hamb"></div>
+                                </div>
+                                <div class="mob-sidebar">
+                                    <ul class="mob-sidebar__header d-flex align-items-center">
+                                        <li class="mob-sidebar__item">
+                                            <a href="#" class="mob-sidebar__link" id="closed">
+                                                &times;
+                                            </a>
+                                        </li>
+                                        <li class="mob-sidebar__item">
+                                            <a href="#" class="mob-sidebar__link">
+                                                <div class="mob-sidebar__text">Меню</div>
+                                            </a>
+                                        </li>
+                                        <li class="mob-sidebar__item">
+                                            <a href="#" class="mob-sidebar__link">
+                                                <div class="mob-sidebar__text">личный кабинет</div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="mob-sidebar__tab">
+                                        <ul class="top-menu__list">
+                                            <li class="top-menu__item">
+                                                <a href="#" class="top-menu__link">Бренды</a>
+                                            </li>
+                                            <li class="top-menu__item">
+                                                <a href="#" class="top-menu__link">О компании</a>
+                                            </li>
+                                            <li class="top-menu__item">
+                                                <a href="#" class="top-menu__link">Технология </a>
+                                            </li>
+                                            <li class="top-menu__item">
+                                                <a href="#" class="top-menu__link">Акции</a>
+                                            </li>
+                                            <li class="top-menu__item">
+                                                <a href="#" class="top-menu__link">Доставка и оплата </a>
+                                            </li>
+                                            <li class="top-menu__item">
+                                                <a href="#" class="top-menu__link">Советы</a>
+                                            </li>
+                                            <li class="top-menu__item">
+                                                <a href="#" class="top-menu__link">Контакты</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -347,82 +396,84 @@
                                         <div class="section__all">Все товары</div>
                                     </div>
                                 </div>
-                                <div class="row category__col swiper-container">
-                                    <div class="category-slider swiper-wrapper">
-                                        <div class="category-slider__item swiper-slide">
-                                            <div class="cat-block d-flex">
-                                                <div class="cat-block-left">
-                                                    <h3 class="cat-block__title">Для строек</h3>
-                                                    <div class="cat-block__descr">
-                                                        Какой-нибудь текст пояснящий будет тут
+                                <div class="row">
+                                    <div class="category__col swiper-container">
+                                        <div class="category-slider swiper-wrapper">
+                                            <div class="category-slider__item swiper-slide">
+                                                <div class="cat-block d-flex">
+                                                    <div class="cat-block-left">
+                                                        <h3 class="cat-block__title">Для строек</h3>
+                                                        <div class="cat-block__descr">
+                                                            Какой-нибудь текст пояснящий будет тут
+                                                        </div>
+                                                        <a href="#" class="cat-block__more more">Подробнее</a>
                                                     </div>
-                                                    <a href="#" class="cat-block__more more">Подробнее</a>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="category-slider__item swiper-slide">
-                                            <div class="cat-block cat-block__work d-flex">
-                                                <div class="cat-block-left">
-                                                    <h3 class="cat-block__title">Для промышленности</h3>
-                                                    <div class="cat-block__descr">
-                                                        Какой-нибудь текст пояснящий будет тут
+                                            <div class="category-slider__item swiper-slide">
+                                                <div class="cat-block cat-block__work d-flex">
+                                                    <div class="cat-block-left">
+                                                        <h3 class="cat-block__title">Для промышленности</h3>
+                                                        <div class="cat-block__descr">
+                                                            Какой-нибудь текст пояснящий будет тут
+                                                        </div>
+                                                        <a href="#" class="cat-block__more more">Подробнее</a>
                                                     </div>
-                                                    <a href="#" class="cat-block__more more">Подробнее</a>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="category-slider__item swiper-slide">
-                                            <div class="cat-block cat-block__car d-flex">
-                                                <div class="cat-block-left">
-                                                    <h3 class="cat-block__title">Для строек</h3>
-                                                    <div class="cat-block__descr">
-                                                        Какой-нибудь текст пояснящий будет тут
+                                            <div class="category-slider__item swiper-slide">
+                                                <div class="cat-block cat-block__car d-flex">
+                                                    <div class="cat-block-left">
+                                                        <h3 class="cat-block__title">Для строек</h3>
+                                                        <div class="cat-block__descr">
+                                                            Какой-нибудь текст пояснящий будет тут
+                                                        </div>
+                                                        <a href="#" class="cat-block__more more">Подробнее</a>
                                                     </div>
-                                                    <a href="#" class="cat-block__more more">Подробнее</a>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="category-slider__item swiper-slide">
-                                            <div class="cat-block cat-block__car d-flex">
-                                                <div class="cat-block-left">
-                                                    <h3 class="cat-block__title">Для строек</h3>
-                                                    <div class="cat-block__descr">
-                                                        Какой-нибудь текст пояснящий будет тут
+                                            <div class="category-slider__item swiper-slide">
+                                                <div class="cat-block cat-block__car d-flex">
+                                                    <div class="cat-block-left">
+                                                        <h3 class="cat-block__title">Для строек</h3>
+                                                        <div class="cat-block__descr">
+                                                            Какой-нибудь текст пояснящий будет тут
+                                                        </div>
+                                                        <a href="#" class="cat-block__more more">Подробнее</a>
                                                     </div>
-                                                    <a href="#" class="cat-block__more more">Подробнее</a>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="category-slider__item swiper-slide">
-                                            <div class="cat-block cat-block__car d-flex">
-                                                <div class="cat-block-left">
-                                                    <h3 class="cat-block__title">Для строек</h3>
-                                                    <div class="cat-block__descr">
-                                                        Какой-нибудь текст пояснящий будет тут
+                                            <div class="category-slider__item swiper-slide">
+                                                <div class="cat-block cat-block__car d-flex">
+                                                    <div class="cat-block-left">
+                                                        <h3 class="cat-block__title">Для строек</h3>
+                                                        <div class="cat-block__descr">
+                                                            Какой-нибудь текст пояснящий будет тут
+                                                        </div>
+                                                        <a href="#" class="cat-block__more more">Подробнее</a>
                                                     </div>
-                                                    <a href="#" class="cat-block__more more">Подробнее</a>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="category-slider__item swiper-slide">
-                                            <div class="cat-block cat-block__car d-flex">
-                                                <div class="cat-block-left">
-                                                    <h3 class="cat-block__title">Для строек</h3>
-                                                    <div class="cat-block__descr">
-                                                        Какой-нибудь текст пояснящий будет тут
+                                            <div class="category-slider__item swiper-slide">
+                                                <div class="cat-block cat-block__car d-flex">
+                                                    <div class="cat-block-left">
+                                                        <h3 class="cat-block__title">Для строек</h3>
+                                                        <div class="cat-block__descr">
+                                                            Какой-нибудь текст пояснящий будет тут
+                                                        </div>
+                                                        <a href="#" class="cat-block__more more">Подробнее</a>
                                                     </div>
-                                                    <a href="#" class="cat-block__more more">Подробнее</a>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="category-slider__item swiper-slide">
-                                            <div class="cat-block cat-block__car d-flex">
-                                                <div class="cat-block-left">
-                                                    <h3 class="cat-block__title">Для строек</h3>
-                                                    <div class="cat-block__descr">
-                                                        Какой-нибудь текст пояснящий будет тут
+                                            <div class="category-slider__item swiper-slide">
+                                                <div class="cat-block cat-block__car d-flex">
+                                                    <div class="cat-block-left">
+                                                        <h3 class="cat-block__title">Для строек</h3>
+                                                        <div class="cat-block__descr">
+                                                            Какой-нибудь текст пояснящий будет тут
+                                                        </div>
+                                                        <a href="#" class="cat-block__more more">Подробнее</a>
                                                     </div>
-                                                    <a href="#" class="cat-block__more more">Подробнее</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -953,16 +1004,20 @@
                     <div class="site-footer__bottom">
                         <div class="container">
                             <div class="row">
-                                <div class="col-6">
+                                <div class="col-md-12 col-lg-6 text-center text-lg-left">
                                     Все права защищены. © 2017-2019 ООО «ФОРСАЖЪ»
                                 </div>
-                                <div class="col-6">
+                                <div class="col-md-12 col-lg-6 text-center text-lg-right">
                                     <div class="site-footer__copyright">
                                         <div class="f-copyright">
                                             <span class="f-copyright__text">Сделано</span>
-                                            <span class="f-copyright__icon"></span>
-                                            <span class="f-copyright__text">Сделано</span>
-                                            <span class="f-copyright__icon"></span>
+                                            <span class="f-copyright__icon">
+                                                <img src="./assets/icon/heart.png" alt="">
+                                            </span>
+                                            <span class="f-copyright__text">Сделано с</span>
+                                            <span class="f-copyright__icon">
+                                                <img src="./assets/icon/coffee-cup.png" alt="">
+                                            </span>
                                             <span class="f-copyright__text">студией
                                                 <a href="#" class="f-copyright__link">GS Creative </a>
                                             </span>

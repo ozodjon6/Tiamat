@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="freeze">
 
 <head>
     <meta charset="UTF-8">
@@ -11,6 +11,7 @@
 <body>
     <div id="root">
         <div class="wrapper">
+            <div class=" nav-overlay blog-overlay"></div>
             <header class="header pt-3">
                 <div class="container">
                     <div class="row">
@@ -113,7 +114,7 @@
                                 </div>
                                 <div class="mob-sidebar">
                                     <ul class="mob-sidebar__header d-flex align-items-center">
-                                        <li class="mob-sidebar__item">
+                                        <li class="mob-sidebar__item close-btn">
                                             <a href="#" class="mob-sidebar__link" id="closed">
                                                 &times;
                                             </a>
@@ -167,6 +168,7 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="nav-overlay"></div>
                         </div>
                     </nav>
                     <section class="main-slider">
@@ -703,76 +705,78 @@
                                         <div class="section__all">Все товары</div>
                                     </div>
                                 </div>
-                                <div class="row block-board__slide swiper-container">
-                                    <div class="block-board__slider swiper-wrapper">
-                                        <div class="col-12 block-board__item swiper-slide">
-                                            <div class="blog">
-                                                <a href="#" class="blog__img">
-                                                    <img src="./assets/img/cat-1.png" alt="">
-                                                </a>
-                                                <a href="#" class="blog__text">
-                                                    Как правильно наносить герметик на влажную поверхность
-                                                </a>
+                                <div class="row">
+                                    <div class="block-board__slide swiper-container">
+                                        <div class="block-board__slider swiper-wrapper">
+                                            <div class="col-12 block-board__item swiper-slide">
+                                                <div class="blog">
+                                                    <a href="#" class="blog__img">
+                                                        <img src="./assets/img/cat-1.png" alt="">
+                                                    </a>
+                                                    <a href="#" class="blog__text">
+                                                        Как правильно наносить герметик на влажную поверхность
+                                                    </a>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="col-12 block-board__item swiper-slide">
-                                            <div class="blog">
-                                                <a href="#" class="blog__img">
-                                                    <img src="./assets/img/cat-2.png" alt="">
-                                                </a>
-                                                <a href="#" class="blog__text">
-                                                    Как правильно наносить герметик на влажную поверхность
-                                                </a>
+                                            <div class="col-12 block-board__item swiper-slide">
+                                                <div class="blog">
+                                                    <a href="#" class="blog__img">
+                                                        <img src="./assets/img/cat-2.png" alt="">
+                                                    </a>
+                                                    <a href="#" class="blog__text">
+                                                        Как правильно наносить герметик на влажную поверхность
+                                                    </a>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="col-12 block-board__item swiper-slide">
-                                            <div class="blog">
-                                                <a href="#" class="blog__img">
-                                                    <img src="./assets/img/cat-3.png" alt="">
-                                                </a>
-                                                <a href="#" class="blog__text">
-                                                    Как правильно наносить герметик на влажную поверхность
-                                                </a>
+                                            <div class="col-12 block-board__item swiper-slide">
+                                                <div class="blog">
+                                                    <a href="#" class="blog__img">
+                                                        <img src="./assets/img/cat-3.png" alt="">
+                                                    </a>
+                                                    <a href="#" class="blog__text">
+                                                        Как правильно наносить герметик на влажную поверхность
+                                                    </a>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="col-12 block-board__item swiper-slide">
-                                            <div class="blog">
-                                                <a href="#" class="blog__img">
-                                                    <img src="./assets/img/cat-2.png" alt="">
-                                                </a>
-                                                <a href="#" class="blog__text">
-                                                    Как правильно наносить герметик на влажную поверхность
-                                                </a>
+                                            <div class="col-12 block-board__item swiper-slide">
+                                                <div class="blog">
+                                                    <a href="#" class="blog__img">
+                                                        <img src="./assets/img/cat-2.png" alt="">
+                                                    </a>
+                                                    <a href="#" class="blog__text">
+                                                        Как правильно наносить герметик на влажную поверхность
+                                                    </a>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="col-12 block-board__item swiper-slide">
-                                            <div class="blog">
-                                                <a href="#" class="blog__img">
-                                                    <img src="./assets/img/cat-3.png" alt="">
-                                                </a>
-                                                <a href="#" class="blog__text">
-                                                    Как правильно наносить герметик на влажную поверхность
-                                                </a>
+                                            <div class="col-12 block-board__item swiper-slide">
+                                                <div class="blog">
+                                                    <a href="#" class="blog__img">
+                                                        <img src="./assets/img/cat-3.png" alt="">
+                                                    </a>
+                                                    <a href="#" class="blog__text">
+                                                        Как правильно наносить герметик на влажную поверхность
+                                                    </a>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="col-12 block-board__item swiper-slide">
-                                            <div class="blog">
-                                                <a href="#" class="blog__img">
-                                                    <img src="./assets/img/cat-1.png" alt="">
-                                                </a>
-                                                <a href="#" class="blog__text">
-                                                    Как правильно наносить герметик на влажную поверхность
-                                                </a>
+                                            <div class="col-12 block-board__item swiper-slide">
+                                                <div class="blog">
+                                                    <a href="#" class="blog__img">
+                                                        <img src="./assets/img/cat-1.png" alt="">
+                                                    </a>
+                                                    <a href="#" class="blog__text">
+                                                        Как правильно наносить герметик на влажную поверхность
+                                                    </a>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="col-12 block-board__item swiper-slide">
-                                            <div class="blog">
-                                                <a href="#" class="blog__img">
-                                                    <img src="./assets/img/cat-3.png" alt="">
-                                                </a>
-                                                <a href="#" class="blog__text">
-                                                    Как правильно наносить герметик на влажную поверхность
-                                                </a>
+                                            <div class="col-12 block-board__item swiper-slide">
+                                                <div class="blog">
+                                                    <a href="#" class="blog__img">
+                                                        <img src="./assets/img/cat-3.png" alt="">
+                                                    </a>
+                                                    <a href="#" class="blog__text">
+                                                        Как правильно наносить герметик на влажную поверхность
+                                                    </a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>

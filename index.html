@@ -11,6 +11,7 @@
 <body>
     <div class="outer-wrapper">
         <div class=" nav-overlay blog-overlay"></div>
+        <div class="cat-overlay blog-overlay"></div>
         <header class="header pt-3">
             <div class="container">
                 <div class="row">
@@ -68,23 +69,49 @@
                     <div class="container">
                         <div class="row align-items-center justify-content-between">
                             <div class="col-12 col-sm-5 col-md-4 col-lg-3">
-                                <div class="nav__cat">
-                                    <a href="#" class="cat-menu">
-                                        <div class="cat-menu__humb">
+                                <div class="nav__category">
+                                    <a href="#" class="cat-btn">
+                                        <div class="cat-btn__humb">
                                             <span></span>
                                             <span></span>
                                             <span></span>
                                         </div>
-                                        <div class="cat-menu__title">Каталог товаров</div>
-                                        <svg class="cat-menu__arrow" width="14" height="14">
+                                        <div class="cat-btn__title">Каталог товаров</div>
+                                        <svg class="cat-btn__arrow" width="14" height="14">
                                             <use xlink:href="./assets/icon/sprite.svg#next-down">
                                                 <!-- <use xlink:href="./assets/icon/sprite.svg#next-up"></use> -->
                                             </use>
                                         </svg>
                                     </a>
+                                    <div class="cat-menu">
+                                        <ul class="cat-menu__list">
+                                            <li class="cat-menu__item">
+                                                <a href="#" class="cat-menu__link">Бренды</a>
+                                            </li>
+                                            <li class="cat-menu__item">
+                                                <a href="#" class="cat-menu__link">Технология </a>
+                                            </li>
+                                            <li class="cat-menu__item">
+                                                <a href="#" class="cat-menu__link">Акции</a>
+                                            </li>
+                                            <li class="cat-menu__item">
+                                                <a href="#" class="cat-menu__link"> Советы </a>
+                                            </li>
+                                            <li class="cat-menu__item">
+                                                <a href="#" class="cat-menu__link">Контакты</a>
+                                            </li>
+                                            <li class="cat-menu__item">
+                                                <a href="#" class="cat-menu__link">оплата </a>
+                                            </li>
+                                        </ul>
+                                        <div class="cat-menu__sheet">
+                                            <div class="cat-menu__action"></div>
+                                        </div>
+                                    </div>
                                 </div>
+                                
                             </div>
-                            <div class=" d-lg-block col nav-m__wrap">
+                            <div class="col nav-m__wrap">
                                 <div class="main-nav">
                                     <ul class="main-nav__list d-flex justify-content-between">
                                         <li class="main-nav__item">
@@ -243,14 +270,16 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="section__header d-flex justify-content-between align-items-center mb-5">
-                                    <div class="section__title d-flex align-items-center">
-                                        <div class="section__icon">
-                                            <img src="./assets/icon/flash.png" alt="">
+                                    <div class="section__title">
+                                        <div class="section__heading d-flex align-items-center">
+                                            <div class="section__icon">
+                                                <img src="./assets/icon/flash.png" alt="">
+                                            </div>
+                                            <h2 class="section__name">Хиты продаж</h2>
                                         </div>
-                                        <h2 class="section__name">Хиты продаж</h2>
                                     </div>
-                                    <div class="section__catolog">
-                                        <a href="#" class="section__btn">Все товары</a>
+                                    <div class="section__btn">
+                                        <a href="#" class="btn">Все товары</a>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -390,14 +419,16 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="section__header d-flex justify-content-between align-items-center mb-5">
-                                    <div class="section__title d-flex align-items-center">
-                                        <div class="section__icon">
-                                            <img src="./assets/icon/voucher.png" alt="">
+                                    <div class="section__title">
+                                        <div class="section__heading d-flex align-items-center">
+                                            <div class="section__icon">
+                                                <img src="./assets/icon/flash.png" alt="">
+                                            </div>
+                                            <h2 class="section__name">Хиты продаж</h2>
                                         </div>
-                                        <h2 class="section__name">Популярные категории</h2>
                                     </div>
-                                    <div class="section__catolog">
-                                        <a href="#" class="section__btn">Все товары</a>
+                                    <div class="section__btn">
+                                        <a href="#" class="btn">Все товары</a>
                                     </div>
                                 </div>
                             </div>
@@ -494,14 +525,16 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="section__header d-flex justify-content-between align-items-center mb-5">
-                                    <div class="section__title d-flex align-items-center">
-                                        <div class="section__icon">
-                                            <img src="./assets/icon/fire.png" alt="">
+                                    <div class="section__title">
+                                        <div class="section__heading d-flex align-items-center">
+                                            <div class="section__icon">
+                                                <img src="./assets/icon/flash.png" alt="">
+                                            </div>
+                                            <h2 class="section__name">Хиты продаж</h2>
                                         </div>
-                                        <h2 class="section__name">Товары по акции</h2>
                                     </div>
-                                    <div class="section__catolog">
-                                        <a href="#" class="section__btn">Все товары</a>
+                                    <div class="section__btn">
+                                        <a href="#" class="btn">Все товары</a>
                                     </div>
                                 </div>
                             </div>
@@ -699,14 +732,16 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="section__header d-flex justify-content-between align-items-center mb-5">
-                                    <div class="section__title d-flex align-items-center">
-                                        <div class="section__icon">
-                                            <img src="./assets/icon/open-book.png" alt="">
+                                    <div class="section__title">
+                                        <div class="section__heading d-flex align-items-center">
+                                            <div class="section__icon">
+                                                <img src="./assets/icon/flash.png" alt="">
+                                            </div>
+                                            <h2 class="section__name">Хиты продаж</h2>
                                         </div>
-                                        <h2 class="section__name">Советы (блог)</h2>
                                     </div>
-                                    <div class="section__catolog">
-                                        <a href="#" class="section__btn">Все товары</a>
+                                    <div class="section__btn">
+                                        <a href="#" class="btn">Все товары</a>
                                     </div>
                                 </div>
                             </div>
